@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+
+<h1>履歷表</h1>
+<p>This is a paragraph.</p>
+<table border=<"1">
+<tr>
+<td><t>姓名</td>
+<td>賴俊諺</td>
+</tr>
+<tr>
+<td>姓別</td>
+<td>男</td>
+</tr>
+<tr>
+<td>信箱</td>
+<td>a416391@gmail.com</td>
+</tr>
+<tr>
+<td>學校</td>
+<td>金大</td>
+</tr>
+<tr>
+<td>年齡</td>
+<td>２０</td>
+</tr>
+<tr>
+<td>專長</td>
+<td>睡覺</td>
+</tr>
+</table>
+</body>
+</html>
