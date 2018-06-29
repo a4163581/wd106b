@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset='utf-8'> 
+     <title>food link</title>
+     <link rel="stylesheet" type="text/css" href="framework.css">
+     <style>
+            body {background-color: blue;}
+            div {color: white;}
+            img.fixed {
+               position: fixed;
+               bottom: 0;
+               right: 0;
+            }
+          </style>
+          
+</head>
+<body>
+<a href="http://tw.yahoo.com/"><img src="排骨飯.jpg"width="200" height="300"/></a>
+<a href="http://tw.yahoo.com/"><img src="焢肉飯.jpg"width="200" height="300"/></a>
+<a href="http://tw.yahoo.com/"><img src="滷肉飯.jpg"width="200" height="300"/></a>
+<a href="http://tw.yahoo.com/"><img src="豬腳飯.jpg"width="200" height="300"/></a>
+<a href="http://tw.yahoo.com/"><img src="雞腿飯.jpg"width="200" height="300"/></a>
+<a href="http://tw.yahoo.com/"><img src="鱈魚飯.jpg"width="200" height="300"/></a>
+<input type="text"  value="0" id="number">
+<button type="button" onclick="bin()" value="bin">非營業用夏季</button>
+<button type="button" onclick="abin()" value="abin">非營業用非夏季</button>
+<button type="button" onclick="bbin()" value="bbin">營業用夏季</button>
+<button type="button" onclick="cbin()" value="cbin">營業用非夏季</button>
+<p>輸入電的度數</p>
+<script>
+  var n= document.getElementById("number");
+  function bin(){
+			var num= parseInt(n.value);
+
+      if(num<=120)num=num*1.63;
+      else if(num>=121&num<=330) num=(num-120)*2.38+195.6;
+      else if(num>=331&num<=500)num=(num-330)*3.52+695;
+      else if(num>=501&num<=700)num=(num-500)*4.61+1293.4;
+      else if(num>=701&num<=1000)num=(num-700)*5.42+2215.4;
+      else if(num>=1001)num=(num-1000)*6.13+3841.4;
+			alert(num.toString()+"元");
+		}
+    function abin(){
+			var num= parseInt(n.value);
+
+      if(num<=120)num=num*1.63;
+      else if(num>=121&num<=330) num=(num-120)*2.10+195.6;
+      else if(num>=331&num<=500)num=(num-330)*2.89+636.6;
+      else if(num>=501&num<=700)num=(num-500)*3.79+1127.9;
+      else if(num>=701&num<=1000)num=(num-700)*4.42+1885.9;
+      else if(num>=1001)num=(num-1000)*4.83+3211.9;
+			alert(num.toString()+"元");
+		}
+    function bbin(){
+			var num= parseInt(n.value);
+
+      if(num<=330)num=num*2.53;
+      else if(num>=331&num<=700) num=(num-330)*3.55+834.9;
+      else if(num>=701&num<=1500)num=(num-700)*4.25+2148.4;
+      else if(num>=1501)num=(num-1500)*6.15+5548.4;
+			alert(num.toString()+"元");
+		}
+    function cbin(){
+			var num= parseInt(n.value);
+
+      if(num<=330)num=num*2.12;
+      else if(num>=331&num<=700) num=(num-330)*2.91+699.6;
+      else if(num>=701&num<=1500)num=(num-700)*3.44+1776.3;
+      else if(num>=1501)num=(num-1500)*4.85+4528.3;
+			alert(num.toString()+"元");
+		}
+    var ax = e.X - startx;
+    pictureBox1.Left += ax;
+    var ay = e.Y - startx;
+    pictureBox1.Top += ay;
+    
+</script>
+
+</body>
+</html>
